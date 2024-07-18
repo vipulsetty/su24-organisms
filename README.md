@@ -90,6 +90,8 @@ If your player would like to know the configuration parameters of the environmen
 
 **You may not use static variables to communicate between instances of your species.** The only communication can be done using the _externalState_ method, keeping in mind that organisms of other species will be able to observe that value as well.
 
+**Also, please do not change any simulator code**, i.e. code in the `organisms` or `organisms.ui` packages. Please notify the Instructor if you feel that a change is necessary.
+
 To add your player to the simulation, list it in the CLASS_LIST and PLAYER_LIST entries in gamemodel.properties; you can have multiple entries separated by commas.
 
 Note: To do logging/debugging, you may use System.out.println or System.err.println to write to the console, but please comment these out before submitting players for the tournaments. You may also call the _print_ or _println_ method in the OrganismsGame object to have text appear in the “messages” console in the simulator.
