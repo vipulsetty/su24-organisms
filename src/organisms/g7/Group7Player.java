@@ -152,10 +152,8 @@ public class Group7Player implements OrganismsPlayer {
                         action = dirs[emptySquares.get(randIndex)];
                     }
                 }
-                if (action != Action.STAY_PUT) {
-                    decrementCooldown();
-                }
 
+                decrementCooldown();
                 if (energyLeft >= 250) {
                     return Move.reproduce(action, dna);
                 }
